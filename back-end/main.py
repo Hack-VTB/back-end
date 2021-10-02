@@ -14,12 +14,13 @@ def create_app() -> FastAPI:
 app = create_app()
 
 
-@app.get("/", include_in_schema=False)
+@app.get("/")
 async def root():
     return "Welcome to the VTB Hack!!!"
 
 
 
-# if __name__ == "__main__":
+if __name__ == "__main__":
+    import uvicorn
 
-#     app.run(app, port=7000)
+    uvicorn.run(app, port=7000)

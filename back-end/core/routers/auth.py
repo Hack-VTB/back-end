@@ -4,11 +4,11 @@ from fastapi import APIRouter
 router = APIRouter()
 
 
-@router.get("/auth", include_in_schema=False)
+@router.get("/auth")
 async def auth():
     return "Auth to Hack"
 
 
-@router.get("/blabla", include_in_schema=False)
+@router.post("/blabla")
 async def blabla():
     return "Blabla"
