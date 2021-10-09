@@ -3,3 +3,4 @@ pydantic
 pydantic[dotenv]
 loguru
 uvicorn
+asyncpg
