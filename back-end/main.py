@@ -19,7 +19,6 @@ async def root():
     return "Welcome to the VTB Hack!!!"
 
 
-
 if __name__ == "__main__":
     import uvicorn
 
